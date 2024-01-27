@@ -1,9 +1,12 @@
 {
   "name": "ps-test-task",
+  "homepage": "http://ponomarEk.github.io/LinkLoomHub",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --mode=development",
     "build": "webpack --mode=production"
   },
@@ -25,6 +28,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
     "postcss": "^8.4.33",
     "postcss-loader": "^8.0.0",

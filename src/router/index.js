@@ -1,10 +1,10 @@
 import React from 'react';
-import { Navigate, createBrowserRouter } from 'react-router-dom';
+import { Navigate, createHashRouter } from 'react-router-dom';
 
 import { ROUTES } from '../constants';
 import { AlbumsPage, ErrorPage, PostsPage, UsersPage } from '../pages';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: ROUTES.ROOT,
     element: <Navigate to={ROUTES.USERS} />,
